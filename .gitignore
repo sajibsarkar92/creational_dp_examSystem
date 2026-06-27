@@ -1,0 +1,25 @@
+# ─── Compiled Output ─────────────────────────────────────────────────────────
+
+out/
+bin/
+build/
+*.class
+
+README.md
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+.settings/
+.classpath
+.project
+
+
+.DS_Store
+Thumbs.db
+*.ini
+*.pdf
+
+# ─── Maven / Gradle (if added later) ─────────────────────────────────────────
+target/
+.gradle/
