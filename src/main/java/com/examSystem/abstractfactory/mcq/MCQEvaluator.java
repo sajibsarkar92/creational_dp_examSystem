@@ -15,8 +15,6 @@ public class MCQEvaluator implements QuestionEvaluator {
 
         MCQQuestion mcq = (MCQQuestion) question;
         String correctAnswer = mcq.getCorrectAnswer();
-        
-        // Clean strings to be safe against accidental spaces or casing
         String cleanSubmission = submittedAnswer.trim();
         String cleanCorrect = correctAnswer.trim();
 

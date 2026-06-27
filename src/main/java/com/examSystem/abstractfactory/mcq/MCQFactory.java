@@ -19,8 +19,6 @@ public class MCQFactory implements QuestionFactory {
 
     @Override
     public Question createQuestion() {
-        
-        // Fetch raw string like: "What is the capital of France?|A) London|B) Berlin|C) Paris|D) Madrid|C"
         String rawData = source.getQuestionData("MCQ");
 
         String[] parts = rawData.split("\\|");

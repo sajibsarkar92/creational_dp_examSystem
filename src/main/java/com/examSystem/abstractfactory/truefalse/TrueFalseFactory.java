@@ -16,8 +16,6 @@ public class TrueFalseFactory implements QuestionFactory {
 
     @Override
     public Question createQuestion() {
-        
-        // Fetch raw string like: "Java is a compiled language.|False"
         String rawData = source.getQuestionData("TrueFalse");
 
         String[] parts = rawData.split("\\|");

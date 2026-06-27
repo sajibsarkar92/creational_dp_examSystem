@@ -13,16 +13,15 @@ public class ExamConfiguration {
     
     private ExamConfiguration() {}
 
+    public String getTitle() { return title; }
+    public int getDuration() { return duration; }
+    public int getPassingScore() { return passingScore; }
+    public boolean isNegativeMarking() { return negativeMarking; }
+    public boolean isQuestionShuffle() { return questionShuffle; }
+    public boolean isAutoSubmit() { return autoSubmit; }
+    public boolean isCalculatorAllowed() { return calculatorAllowed; }
 
-    // @Override
-    // public String toString() {
-    //     return "ExamConfiguration{title='" + title + "', duration=" + duration
-    //             + "min, passingScore=" + passingScore
-    //             + ", negativeMarking=" + negativeMarking
-    //             + ", questionShuffle=" + questionShuffle
-    //             + ", autoSubmit=" + autoSubmit
-    //             + ", calculatorAllowed=" + calculatorAllowed + '}';
-    // }
+
 
     public static class Builder {
 

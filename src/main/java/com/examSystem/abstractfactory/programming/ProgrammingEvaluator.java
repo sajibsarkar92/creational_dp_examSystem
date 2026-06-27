@@ -13,7 +13,6 @@ public class ProgrammingEvaluator implements QuestionEvaluator {
             return 0.0;
         }
 
-        // Dummy evaluation: checks if it contains a basic Java keyword
         double obtainedPoints = 1.0;
         double zeroPoints = 0.0;
 
