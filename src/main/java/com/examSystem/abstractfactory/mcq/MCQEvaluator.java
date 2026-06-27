@@ -15,6 +15,11 @@ public class MCQEvaluator implements QuestionEvaluator {
 
         MCQQuestion mcq = (MCQQuestion) question;
         String correctAnswer = mcq.getCorrectAnswer();
+
+        if (submittedAnswer == null) {
+            return 0.0;
+        }
+
         String cleanSubmission = submittedAnswer.trim();
         String cleanCorrect = correctAnswer.trim();
 

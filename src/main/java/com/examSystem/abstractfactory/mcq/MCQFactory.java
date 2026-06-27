@@ -22,12 +22,13 @@ public class MCQFactory implements QuestionFactory {
         String rawData = source.getQuestionData("MCQ");
 
         String[] parts = rawData.split("\\|");
-        
-        String questionText = parts[0];
-    
-        List<String> options = Arrays.asList(parts).subList(1, parts.length - 1);
-        
 
+        if (parts.length < 3) {
+            return new MCQQuestion(rawData, List.of("N/A"), "N/A");
+        }
+
+        String questionText = parts[0];
+        List<String> options = Arrays.asList(parts).subList(1, parts.length - 1);
         String correctAnswer = parts[parts.length - 1];
 
         return new MCQQuestion(questionText, options, correctAnswer);

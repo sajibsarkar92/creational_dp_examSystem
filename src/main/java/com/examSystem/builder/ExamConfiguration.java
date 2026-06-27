@@ -21,8 +21,6 @@ public class ExamConfiguration {
     public boolean isAutoSubmit() { return autoSubmit; }
     public boolean isCalculatorAllowed() { return calculatorAllowed; }
 
-
-
     public static class Builder {
 
         private ExamConfiguration config = new ExamConfiguration();

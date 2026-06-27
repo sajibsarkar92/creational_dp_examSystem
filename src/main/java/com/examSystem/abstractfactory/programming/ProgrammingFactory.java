@@ -16,8 +16,6 @@ public class ProgrammingFactory implements QuestionFactory {
 
     @Override
     public Question createQuestion() {
-        
-       
         String rawData = source.getQuestionData("Programming");
 
         return new ProgrammingQuestion(rawData);

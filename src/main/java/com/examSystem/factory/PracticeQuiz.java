@@ -75,5 +75,7 @@ public class PracticeQuiz implements Exam {
         } else {
             System.out.println("Result: FAIL");
         }
+        
+        scanner.close();
     }
 }

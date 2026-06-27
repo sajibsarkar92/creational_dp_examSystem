@@ -76,5 +76,7 @@ public class MidtermExam implements Exam {
         } else {
             System.out.println("Result: FAIL");
         }
+        
+        scanner.close();
     }
 }

@@ -19,7 +19,11 @@ public class TrueFalseFactory implements QuestionFactory {
         String rawData = source.getQuestionData("TrueFalse");
 
         String[] parts = rawData.split("\\|");
-        
+
+        if (parts.length < 2) {
+            return new TrueFalseQuestion(rawData, "False");
+        }
+
         String questionText = parts[0];
         String correctAnswer = parts[1];
 

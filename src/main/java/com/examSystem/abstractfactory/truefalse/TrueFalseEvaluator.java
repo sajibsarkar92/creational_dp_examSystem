@@ -15,7 +15,11 @@ public class TrueFalseEvaluator implements QuestionEvaluator {
 
         TrueFalseQuestion tfq = (TrueFalseQuestion) question;
         String correctAnswer = tfq.getCorrectAnswer();
-        
+
+        if (submittedAnswer == null) {
+            return 0.0;
+        }
+
         String cleanSubmission = submittedAnswer.trim();
         String cleanCorrect = correctAnswer.trim();
 

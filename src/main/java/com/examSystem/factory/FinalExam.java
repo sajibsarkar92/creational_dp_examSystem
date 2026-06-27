@@ -76,5 +76,7 @@ public class FinalExam implements Exam {
         } else {
             System.out.println("Result: FAIL");
         }
+        
+        scanner.close();
     }
 }
